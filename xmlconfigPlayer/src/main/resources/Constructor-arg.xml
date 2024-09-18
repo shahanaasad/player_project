@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+           
+           <bean id ="cricket"  class = "Beans.Cricket"/>
+             <bean id ="football"  class = "Beans.Football"/>
+           <bean id ="sachin"  class = "Beans.Sachin"/>
+           <bean id ="saudev"  class = "Beans.Saudev"/>
+           <bean id ="shami"  class = "Beans.Shami"/>
+           <bean id ="ronaldo"  class = "Beans.Ronaldo"/>
+           <bean id ="messi"  class = "Beans.Messi"/>
+           <bean id ="zidane"  class = "Beans.Zidane"/>
+           
+             
+             
+               <bean id ="player"  class = "Beans.Player">
+              <constructor-arg ref="football"/>
+              <constructor-arg ref="zidane"/>
+              </bean>
+</beans>
